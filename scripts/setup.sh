@@ -55,5 +55,7 @@ sed -i 's/arch-linux/arch-devbox/g' '/etc/hostname'
 sed -i 's/arch-linux/arch-devbox/g' '/etc/hosts'
 
 create_keypair_as_user 'hobag'
-remove_public_key_from_github_if_exists
-update_public_key_on_github 'hobag'
+[ -n "$GITHUB_OAUTH_TOKEN" ] && [ -n "$GITHUB_KEY_NAME" ] && \
+  remove_public_key_from_github_if_exists
+[ -n "$GITHUB_OAUTH_TOKEN" ] && [ -n "$GITHUB_KEY_NAME" ] && \
+  update_public_key_on_github 'hobag'
