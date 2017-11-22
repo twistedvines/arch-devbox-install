@@ -4,7 +4,7 @@
 
 install_window_manager() {
   pacman -S --noconfirm xorg-server xorg-xinit xterm xorg-xrandr
-  pacman -S --noconfirm i3
+  pacman -S --noconfirm i3 dmenu
 }
 
 install_window_manager
