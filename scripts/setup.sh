@@ -59,3 +59,5 @@ create_keypair_as_user 'hobag'
   remove_public_key_from_github_if_exists
 [ -n "$GITHUB_OAUTH_TOKEN" ] && [ -n "$GITHUB_KEY_NAME" ] && \
   update_public_key_on_github 'hobag'
+
+exit 0

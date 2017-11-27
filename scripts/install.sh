@@ -8,3 +8,5 @@ install_window_manager() {
 }
 
 install_window_manager
+
+exit 0

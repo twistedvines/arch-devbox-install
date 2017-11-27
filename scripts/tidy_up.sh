@@ -10,3 +10,5 @@ fi
 
 # add hobag to wheel group for password sudo
 usermod -a -G wheel hobag
+
+exit 0
